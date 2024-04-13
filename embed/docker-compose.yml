@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    image: node:14
+    working_dir: /home/node/app
+    volumes:
+      - .:/home/node/app
+    command: sh -c "npm install -g http-server && http-server -p 8080"
+    ports:
+      - "8080:8080"
