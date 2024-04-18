@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     .then((jwt) => {
         pulse.token = jwt;
-        pulse.src = 'https://us-west-2b.online.tableau.com/site/eacloud/pulse/metrics/3da3bf5e-0cc6-4bc4-8111-ddba444cddec';
+        pulse.src = 'https://us-west-2b.online.tableau.com/pulse/site/eacloud/metrics/a894543a-eb7c-4b4a-97bc-7c5522cbee4c';
         console.log("Link to decode JWT: " + 'https://jwt.io/#debugger-io?token=' + jwt);
         console.log("Your username is " + username);
         pulseDiv.appendChild(pulse);
