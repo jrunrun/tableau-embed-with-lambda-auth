@@ -5,7 +5,7 @@ import {
 document.addEventListener('DOMContentLoaded', (event) => {
     const pulseDiv = document.getElementById("pulseJsContainer");
     const pulse = new TableauPulse();
-    const username = 'jcraycraft@salesforce.com';
+    const username = 'embedusertest24@gmail.com';
     const url = 'https://2zmwghp6lmarahhw3u43kckuca0brubo.lambda-url.us-west-2.on.aws/?username=' + username;
     fetch(url, { method: "GET", headers: { 'Content-Type': 'application/json'}})
     .then(response => {

@@ -6,7 +6,7 @@ import {
 document.addEventListener('DOMContentLoaded', (event) => {
     const vizDiv = document.getElementById("vizJsContainer");
     const viz = new TableauViz();
-    const username = 'jcraycraft@salesforce.com';
+    const username = 'embedusertest24@gmail.com';
     const url = 'https://2zmwghp6lmarahhw3u43kckuca0brubo.lambda-url.us-west-2.on.aws/?username=' + username;
     fetch(url, { method: "GET", headers: { 'Content-Type': 'application/json'}})
     .then(response => {
