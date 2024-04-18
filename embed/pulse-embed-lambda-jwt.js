@@ -3,7 +3,7 @@ import {
 } from 'https://online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js';
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const pulseDiv = document.getElementById("tableauPulse");
+    const pulseDiv = document.getElementById("pulseJsContainer");
     const pulse = new TableauPulse();
     const username = 'jcraycraft@salesforce.com';
     const url = 'https://2zmwghp6lmarahhw3u43kckuca0brubo.lambda-url.us-west-2.on.aws/?username=' + username;
