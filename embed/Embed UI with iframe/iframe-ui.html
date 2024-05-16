@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed UI with iframe</title>
+    <!-- <script type="module" src="pulse-embed-lambda-jwt.js"></script> -->
+    <script type="module"
+    src="https://dev-caphill.online.dev.tabint.net/javascripts/api/tableau.embedding.3.latest.min.js">
+    </script>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pulseJsContainer">
+
+        <!-- <iframe src="https://us-west-2b.online.tableau.com/pulse/site/eacloud?embed=yes"></iframe> -->
+
+        <!-- <iframe src="https://dev-caphill.online.dev.tabint.net/pulse/site/queryvdsintegration?p4sf=y"></iframe> -->
+        <iframe src="https://dev-caphill.online.dev.tabint.net/pulse/site/queryvdsintegration?embed=y"></iframe>
+
+
+        <tableau-pulse id="tableauPulse"
+        src='https://dev-caphill.online.dev.tabint.net/pulse/site/queryvdsintegration/metrics/46fec247-e822-4e5b-97bd-9d15b4180866'
+        height="800"
+        width="100%"
+        token="eyJhbGciOiJIUzI1NiIsImlzcyI6ImIxMjI4MzM0LWZjMTctNGJkMS1hZjk0LWMyYTcwZTUzZTRmYyIsImtpZCI6ImJiYzI2ZDJkLTAyMzktNDA1My1hYTYyLTJhZGI3MjkyNDU5MiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiMTIyODMzNC1mYzE3LTRiZDEtYWY5NC1jMmE3MGU1M2U0ZmMiLCJleHAiOjE3MTU3MTE5NTIsImp0aSI6ImU4ZTgxMGFmLTk2MzAtNGQ4Mi04NThlLTRkNWY4MzkyN2IyYyIsImF1ZCI6InRhYmxlYXUiLCJzdWIiOiJqY3JheWNyYWZ0QHNhbGVzZm9yY2UuY29tIiwic2NwIjpbInRhYmxlYXU6Y29udGVudDpyZWFkIiwidGFibGVhdTp2aWV3czpkb3dubG9hZCIsInRhYmxlYXU6aW5zaWdodHM6ZW1iZWQiLCJ0YWJsZWF1Omluc2lnaHRfZGVmaW5pdGlvbnM6Y3JlYXRlIiwidGFibGVhdTppbnNpZ2h0X2RlZmluaXRpb25zX21ldHJpY3M6cmVhZCIsInRhYmxlYXU6aW5zaWdodF9kZWZpbml0aW9uczpkZWxldGUiLCJ0YWJsZWF1Omluc2lnaHRfZGVmaW5pdGlvbnM6dXBkYXRlIiwidGFibGVhdTppbnNpZ2h0c19zdW1tYXJ5OnJlYWQiLCJ0YWJsZWF1Omluc2lnaHRzOnJlYWQiLCJ0YWJsZWF1Omluc2lnaHQ6cmVhZCIsInRhYmxlYXU6aW5zaWdodF9tZXRyaWNzOmNyZWF0ZSIsInRhYmxlYXU6aW5zaWdodF9tZXRyaWNzOmRlbGV0ZSIsInRhYmxlYXU6aW5zaWdodF9tZXRyaWNzOnJlYWQiLCJ0YWJsZWF1Omluc2lnaHRfbWV0cmljczp1cGRhdGUiLCJ0YWJsZWF1Omluc2lnaHRfbWV0cmljczpjcmVhdGUiLCJ0YWJsZWF1Om1ldHJpY19zdWJzY3JpcHRpb25zOmNyZWF0ZSIsInRhYmxlYXU6bWV0cmljX3N1YnNjcmlwdGlvbnM6cmVhZCIsInRhYmxlYXU6bWV0cmljX3N1YnNjcmlwdGlvbnM6ZGVsZXRlIiwidGFibGVhdTptZXRyaWNfc3Vic2NyaXB0aW9uczp1cGRhdGUiLCJ0YWJsZWF1Om1ldHJpY19zdWJzY3JpcHRpb25zOmNyZWF0ZSJdfQ.HPOaKaE62h8B7gmcA4Kiepa_WIjHZHTdMB50Ka9iEpc"
+     </tableau-pulse>
+
+    </div>
+</body>
+
+</html>

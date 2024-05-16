@@ -13,7 +13,11 @@ def lambda_handler(username):
             "jti": str(uuid.uuid4()),
             "aud": "tableau",
             "sub": username,
-            "scp": ["tableau:views:embed", "tableau:insights:embed"]
+            # "scp": ["tableau:views:embed", "tableau:insights:embed"],
+            "scp": ["tableau:views:embed"],
+            "Region": ["East", "South"],
+            "https://tableau.com/oda": "true",
+            "https://tableau.com/groups": ["justinOnDemandGroup"]
         },
         SECRET,
         algorithm="HS256",
@@ -27,5 +31,5 @@ def lambda_handler(username):
     
     return token
 
-lambda_handler('embedusertest24@gmail.com')
+lambda_handler('j@j.com')
 

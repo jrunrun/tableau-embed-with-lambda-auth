@@ -3,8 +3,8 @@ services:
   lambda-jwt:
     build: .
     environment:
-      - CLIENT_ID='8cc15af7-0924-4e54-b166-473fe5eca4a7'
-      - SECRET_ID='f6ab008c-5b93-47e2-87f3-1ff3e0bd21cc'
-      - SECRET='7rFV77cXHoAUnbHglaaKvr9rRqZMjLhQlFE/NrA3Lxc='
+      - CLIENT_ID=0eedd97b-ead2-4d13-aa97-97f5e71246a8
+      - SECRET_ID=113e653c-ef9f-45c8-9e22-9213f20b1891
+      - SECRET=S8V1LyXZmA4kprGtQwtZezuUpvUPj6sHJFJF0CGjjl8=
     volumes:
       - .:/usr/src/app
